@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel --config-file ./babel.config.js server -d build/server",
-    "start": "npm run build && node build/server/index.mjs"
+    "webpack": "npx webpack",
+    "server": "npx nodemon dist/server.node.js"
   },
   "keywords": [],
   "author": "",

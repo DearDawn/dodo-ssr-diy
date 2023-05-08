@@ -11,7 +11,6 @@ const app = express();
 
 app.use('/dist', express.static(path.resolve(__dirname, '../dist')));
 app.get('/api/test', (req, res) => {
-  console.log('[dodo] ', 'test')
   res.send(JSON.stringify({
     data: 'hello world!',
     status: 0,
