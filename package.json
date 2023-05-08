@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "concurrently \"npm run webpack\" \"npm run server\"",
     "webpack": "npx webpack",
     "server": "npx nodemon dist/server.node.js"
   },
@@ -26,6 +27,7 @@
     "webpack": "^5.81.0"
   },
   "devDependencies": {
+    "concurrently": "^8.0.1",
     "css-loader": "^6.7.3",
     "mini-css-extract-plugin": "^2.7.5",
     "style-loader": "^3.3.2",

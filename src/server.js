@@ -54,4 +54,6 @@ app.get('/*', async (req, res) => {
 
 app.listen(4000, () => {
   console.log('Server is listening on port 4000');
+  console.log('[dodo] ', 'SSR: http://localhost:4000/home')
+  console.log('[dodo] ', 'CSR: http://localhost:4000/home?__csr=1')
 });
